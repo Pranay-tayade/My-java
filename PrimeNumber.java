@@ -1,24 +1,36 @@
 import java.util.Scanner;
 class PrimeNumber
 {
+   void ScanPrime(int i)
+{
+  boolean flag = false;
+ for (int j =2; j<=i/2;j++) 
+     {
+      if (i % 2==0)
+     {
+      flag=true;
+      break;
+}
+
+      if(!flag)
+{
+   System.out.println(i+" ");
+     }
+}
+}
+
 public static void main(String[] args)
 {
-Scanner sc= new Scanner (System.in);
-    System.out.print("enter number");
-         int num = sc.nextInt();
-        boolean flag = false;
-        for(int i = 2; i <= num/2; ++i)
-        {
-            if(num % i == 0)
-            {
-                flag = true;
-            
-            }
-        }
-
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
-    }
+Scanner de = new Scanner(System.in);
+System.out.println("Enter the starting number:- ");
+int a = de.nextInt();
+System.out.println("Enter the last number:- ");
+int b = de.nextInt();
+PrimeNumber p = new PrimeNumber();
+System.out.println("Prime number from" + a + "to" + b + "are :-");
+for (int y = a; y<=b;y++)
+    {
+     p.ScanPrime(y);
+   }
+  }
 }
