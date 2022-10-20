@@ -1,3 +1,15 @@
+/*
+  Question - Array Ascending Descending Order.
+  Name - Pranay Jeevan Tayade.
+  Date - 20/10/2022.
+ */
+
+
+
+
+
+
+
 package javapractical;
 
 import java.util.*;
